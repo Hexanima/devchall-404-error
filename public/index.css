@@ -1,10 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --primary-text: #333;
+  --secondary-text: #4f4f4f;
+  --terciary-text: #bdbdbd;
+  --inconsolata: "Inconsolata", monospace;
+  --space-mono: "Space Mono", monospace;
+  --montserrat: "Montserrat", sans-serif;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: lightcyan;
-    min-height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+h1 {
+  font-family: var(--inconsolata);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -1.92px;
+  color: var(--primary-text);
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.spacestr,
+.spacemono {
+  font-family: var(--space-mono);
+}
+.spacestr,
+.spacemono {
+  font-weight: 700;
+}
+.spacemono {
+  font-weight: 400;
+}
+
+.img img {
+  width: 280px;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.msg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+h2 {
+  color: var(--primary-text);
+  font-family: var(--space-mono);
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1.68px;
+}
+
+p {
+  color: var(--secondary-text);
+  font-family: var(--space-mono);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.63px;
+}
+
+button {
+  background-color: var(--primary-text);
+  font-family: var(--space-mono);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: -0.49px;
+  font-size: 14px;
+  font-weight: 700;
+  width: 216px;
+  height: 68px;
+}
+
+span {
+  font-family: var(--montserrat);
+  font-weight: 500;
+  color: var(--terciary-text);
+  font-size: 14px;
+}
+span a {
+  color: var(--terciary-text);
+  font-weight: 700;
+}
+
+footer {
+  align-self: flex-end;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
 }
